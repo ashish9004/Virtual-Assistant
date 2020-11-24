@@ -6,8 +6,8 @@ import wikipedia
 import os # for path selection 
 #import pyaudio and install pyaudio whl file  if u get error pyaudio, install file as per ur python ver. 
 import smtplib # for email send
-import pyautogui # install for take control mouse and keyboard.
-import psutil # use for check sysytem prosses like cpu, battery utilization ect.
+import pyautogui # install-use to  take  control mouse and keyboard.
+import psutil # use to for check sysytem prosses like cpu, battery utilization ect.
 import pyjokes 
 
 
@@ -40,7 +40,7 @@ def wishme():
         speak("Good Afternoon")
     else:
         speak("Good Evening")
-    speak("Hello Ashish, I am your personal assistant!, Please tell me how may i help you, ")
+    speak("Hello Ashish, I am your personal assistent!, Please tell me how may i help you, ")
 
 def takecommand():
     #take microphone input from the user and return string output
@@ -142,17 +142,17 @@ if __name__ == "__main__":
             speak( 'You are wellcome', 'no problem')
         
         elif ('hello') in message or ('hi') in message:
-            speak('Wellcome to AI virtual intelligence project. At your service sir.')
+            speak('Wellcome to virtual intelligence Area. At your service sir.')
 
         elif ('your name') in message:
-            speak('My name is AI, at your service sir')
+            speak('I am your Personal Assistant, At your service sir')
 
         elif 'voice' in message:
             if 'female' in message:
                 engine.setProperty('voice',voices[1].id)
             else:
                 engine.setProperty('voice',vioces[0].id)
-            speak("Hello sir, i have switch my voice.how is it")
+            speak("Hello sir, i have switch my voice")
 
         elif 'screenshot' in message:
             speak("taking screenshot")
